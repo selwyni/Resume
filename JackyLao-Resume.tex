@@ -1,0 +1,252 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.90]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{8cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage[firstyear=2013,lastyear=2019]{moderntimeline}
+\tlwidth{1.5pt}
+%\tlrunningwidth{} %The width of the line behind the timeline
+%\tlrunningcolor{} %Color of the running line
+
+\usepackage{xcolor}
+\usepackage{tikz}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Jacky} % Your first name
+\familyname{Lao} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Resume}
+\address{\\5032 Forbes Avenue, SMC-3006\\}{Pittsburgh, PA 15219}
+\mobile{(949) 677 2165}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{jackyl@andrew.cmu.edu}
+\homepage{https://github.com/selwyni}{} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{U.S. Citizen}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"Tomorrow is nothing, today is too late; the good lived yesterday." - Marcus Aurelius}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\tlcventry[gray]{2015}{2019}{\textsc{Carnegie~Mellon University}}{B.S. Materials Science \& Engineering, Computer Science Minor}{\newline Pittsburgh, PA}{}{QPA - 3.83}
+%\tlcventry[orange]{2015}{0}{\textsc{Carnegie~Mellon University}}{B.S. Biomedical Engineering}{Pittsburgh,~PA}{}{Expected -2019}
+%\tlcventry[orange]{2011}{2015}{Highschool Diploma}{\textsc{Northwood High School}}{Irvine, CA}{\textit{GPA -- 4.32}}{Top 2\% of the class}  % Arguments not required can be left empty
+
+
+%\section{Masters Thesis}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Papers and Projects}
+
+\tlcventry[gray]{2016}{0}{Research Assistant}{\textsc{Carnegie Mellon University}}{Pittsburgh, PA}{}{
+\begin{itemize}
+  	\item Sudipto Mandal, Jacky Lao, Sean Donegan, Anthony D. Rollett, "Generation of representative three-dimensional microstructure for two-phase titanium alloys." (In preparation)
+	\item Percolation Theory - Application of Data Mining and Data Science techniques to microstructural data
+	\item Investigation of multiple length scales of Two-Phase Titanium alloy microstructure with EBSD, SEM, DIC, Optical Microscopy.
+\end{itemize}}
+
+\section{Experience}
+
+\tlcventry[gray]{2016}{0}{Research Assistant}{\textsc{Carnegie Mellon Univeristy}}{Pittsburgh, PA}{}{\begin{itemize}
+		\item Assisted Sudipto Mandal and the Rollett Group in testing DREAM3D and understanding differences in additive manufacturing methods of Ti-6Al-4V
+		\item Added functionality to DREAM3D, AFRL's open source microstructure simulator
+		\item Wrote R scripts and m-files to analyze the accuracy of DREAM3D's generation algorithms
+		\item Mounted and polished Ti-6Al-4V samples for SEM, EBSD
+    \item Applied data analysis and visualization techniques to HDF5 outputs from evpFFT of 3-dimensional microstructures
+		\end{itemize}}
+
+
+\tlcventry[gray]{2015}{0}{Production Manager}{\textsc{Carnegie Mellon University}}{Pittsburgh, PA}{}{\begin{itemize}
+		\item Streamlined rehearsal room reservation process and shortened average waiting times by 30 minutes
+		\item Scheduled major checkpoints and ensured execution of milestones
+		\item Facilitated conversations between board of directors and production board
+		\item Developed contingencies for problems that would negatively affect production
+	\end{itemize}}
+\tlcventry[gray]{2015}{0}{Set Designer}{\textsc{Carnegie Mellon University}}{Pittsburgh, PA}{}{\begin{itemize}
+		\item Designed the set for an entirely student written and produced production.
+		\item Maintained open lines of communications between directors and implementers to achieve the artistic vision.
+		\end{itemize}}
+\tlcventry[gray]{2015}{0}{Stage Manager}{\textsc{Carnegie Mellon University}}{Pittsburgh, PA}{}{\begin{itemize}
+		\item Maintained communication between all production members
+		\item Organized rehearsals for thirty people
+	\end{itemize}}
+\tlcventry[gray]{2013}{2015}{Technical Director}{\textsc{Northwood High School}}{Irvine, CA}{}{\begin{itemize}
+		\item Decreased lumber costs by 30\% by decreasing waste
+		\item Coordinated eight technical departments in meeting checkpoints
+		\item Analyzed and determined cost-efficiency and quality of set pieces
+	\end{itemize}}
+
+%\tlcventry[orange]{2014}{2015}{Set Designer}{\textsc{Northwood High School}}{Irvine, CA}{}{\begin{itemize}
+%		\item Designed the set for two productions on the Northwood High stage.
+%		\item Oversaw the safe and efficient construction of the set.
+%	\end{itemize}}
+
+%\tlcventry[orange]{2014}{2015}{Assistant Stage Manager}{\textsc{Northwood High School}}{Irvine}{}{\begin{itemize}
+%		\item Scheduled rehearsals for a cast of 150 for one production.
+%		\item Wrote rehearsal reports and documented day-to-day operations.
+%	\end{itemize}}
+
+%\tlcventry[orange]{2013}{2015}{Master Carpenter}{\textsc{Northwood High School}}{Irvine}{}{\begin{itemize}
+%		\item Organized a crew of six people in a woodshop.
+%		\item Worked under strict deadlines and under supervision of Kyle Arnold (Disneyland Technician).
+%		\item Produced the sets for four productions and award-winning sets for the two musicals \textit{The~Sound~of~Music} and \textit{You're A Good Man, Charlie~Brown}. \end{itemize}}
+
+%\tlcventry[orange]{2013}{2014}{Spotlight Operator}{\textsc{Maple Conservatory of Dance}}{Irvine}{}{Operated a Lycian Spotlight for several productions of Tchaikovsky's Nutcracker at the Northwood High Theater under the direction of James Adling (Theatre Manager, Disneyland Technician.)}
+
+%\tlcventry[orange]{2013}{2014}{Spotlight Operator}{\textsc{Dmitri Kulev Classical Ballet Academy}}{Irvine}{}{Operated a Lycian Spotlight for several productions of Tchaikovsky's Nutcracker at the Northwood High Theater under the direction of Kyle Arnold (Technical Director, Disneyland Technician.)}
+
+%\tlcventry[orange]{2013}{2015}{Machinist}{\textsc{Science Olympiad Team, NHS}}{Irvine}{}{
+%	\begin{itemize}
+%		\item Built the major machines for the eight construction events of the Division C Science Olympiad Competition.
+%		\item Scheduled build days for a team of thirty people.
+%	\end{itemize}}
+
+
+%\tlcventry[orange]{2011}{2015}{Handyman}{\textsc{Hubert Lao}}{Irvine}{}{\begin{itemize}
+%		\item Assisted realtors with services such as painting, electrical, appliance repair and installation, and home renovations.
+%	\end{itemize}}
+
+%\newline{}\newline{}
+%Detailed achievements:
+%\begin{itemize}
+%\item Learned how to make amazing coffee
+%\item Finally determined the reason for \textsc{PC LOAD LETTER}:
+%\begin{itemize}
+%\item Paper jam
+%\item Software issues:
+%\begin{itemize}
+%\item Word not sending the correct data to printer
+%\item Windows trying to print in letter format
+%\end{itemize}
+%\item Coffee spilled inside printer
+%\end{itemize}
+%\item Broke the office record for number of kitten pictures in cubicle
+%\end{itemize}}
+%------------------------------------------------
+%\section{Extracurricular Activities}
+%\tlcventry[orange]{2013}{2015}{Vice President, Honors Student}{Academic Decathlon Team, NHS}{Irvine}{}{\begin{itemize}
+%		\item Maintained the highest score on the NHS team in the Orange Country Academic Decathlon competition.
+%		\item Won a totoal of sixteen top five medals in two years.
+%		\item Taught in weekly study sessions from topics ranging from economics to art history.
+%	\end{itemize}}
+%\section{Personal Projects}
+%\tlcventry[orange]{2014}{2015}{Technical Director}{Northwood High School}{Irvine}{}{Analyzed and determined the cost-efficiency and quality of set pieces using different types of woods (white fir, white pine, poplar, and red oak)}
+%\tlcventry[orange]{2011}{2015}{Bass Singer}{Northwood High School}{Irvine}{}{Sang in the Grammy Award Winning choruses (Bass Clef and Concert Chorale) in the Northwood Chorus Department.}
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\cvitem{Proficient:}{MATLAB, Python, R, LaTeX}
+\cvitem{Familiar:}{SQL, Git, Linux, Mathematica, ParaView}
+\cvitem{Instrumental:}{Optical Microscopy, X-Ray Diffraction, Scanning Electron Microscopy}
+
+\section{Coursework}
+\cvitem{Current:}{Probability Theory, Functional Programming, Materials Characterization, Transport, Defects, Phase Relations}
+\cvitem{Completed:}{Imperative Programming, Differential Equations, Engineering Statistics and Quality Control, Intro to Machine Learning (Coursera)}
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Qualities}
+
+%\cvitem{Personal Skills:}{Strong analytical and problem-solving skills, grace under pressure, and eager to learn and refine new skills. Capable of leading small teams in areas of expertise and identifying areas where help is necessary. Able to prioritize and delegate tasks.}
+
+%\cvitem{Technical Skills:}{}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Languages}
+
+%\cvitemwithcomment{English}{Native Tongue}{}
+%\cvitemwithcomment{Cantonese}{Basic}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+%\renewcommand{\listitemsymbol}{--~} % Changes the symbol used for lists
+
+%\cvlistdoubleitem{Cooking}{Freerunning}
+%\cvlistdoubleitem{Singing}{Cajon}
+%\cvlistdoubleitem{Drumline}{Reading Great Literature}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}\grid
