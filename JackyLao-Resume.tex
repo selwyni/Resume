@@ -35,7 +35,7 @@
 %\setlength{\makecvtitlenamewidth}{8cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 \usepackage[firstyear=2013,lastyear=2019]{moderntimeline}
-\tlwidth{1.5pt}
+\tlwidth{1pt}
 %\tlrunningwidth{} %The width of the line behind the timeline
 %\tlrunningcolor{} %Color of the running line
 
@@ -68,7 +68,7 @@
 %----------------------------------------------------------------------------------------
 
 \section{Education}
-\tlcventry[gray]{2015}{2019}{\textsc{Carnegie~Mellon University}}{B.S. Materials Science \& Engineering, Computer Science Minor}{\newline Pittsburgh, PA}{}{Cumulative QPA - 3.87}
+\tlcventry[gray]{2015}{2019}{\textsc{Carnegie~Mellon University}}{B.S. Materials Engineering, Statistics \& Machine Learning (Double Major)}{\newline Pittsburgh, PA}{}{GPA - 3.89}
 %\tlcventry[orange]{2015}{0}{\textsc{Carnegie~Mellon University}}{B.S. Biomedical Engineering}{Pittsburgh,~PA}{}{Expected -2019}
 %\tlcventry[orange]{2011}{2015}{Highschool Diploma}{\textsc{Northwood High School}}{Irvine, CA}{\textit{GPA -- 4.32}}{Top 2\% of the class}  % Arguments not required can be left empty
 
@@ -78,23 +78,16 @@
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-\section{Papers and Projects}
 
-\tlcventry[gray]{2016}{0}{Research Assistant}{\textsc{Carnegie Mellon University}}{Pittsburgh, PA}{}{
-\begin{itemize}
-  	\item Sudipto Mandal, Jacky Lao, Sean Donegan, Anthony D. Rollett, "Generation of representative three-dimensional microstructure for two-phase titanium alloys." (In preparation)
-	\item Application of data mining and data science techniques to microstructural data
-	\item Investigation of multiple length scales of Two-Phase Titanium alloy microstructure with EBSD, SEM, DIC, Optical Microscopy.
-\end{itemize}}
 
 \section{Experience}
 
 \tlcventry[gray]{2016}{0}{Research Assistant}{\textsc{Carnegie Mellon Univeristy}}{Pittsburgh, PA}{}{\begin{itemize}
 		\item Assisted Sudipto Mandal and the Rollett Group on projects involving analysis of DREAM3D software and evpFFT data
 		\item Wrote R scripts and m-files to analyze the accuracy of DREAM3D generation algorithms
-		\item Mounted and polished Ti-6Al-4V samples for SEM, EBSD
-    \item Applied data analysis and visualization techniques to HDF5 outputs from evpFFT of 3-dimensional microstructures
+    \item Performed canonical correlation analysis on evpFFT data to quantify relationships between microstructural features and macrostructure properties
     \item Built a basic ETL pipeline with reusable and generic functions in Python and R
+    \item Mounted and polished Ti-6Al-4V samples for SEM, EBSD
 		\end{itemize}}
 
 
@@ -112,11 +105,11 @@
 		\item Maintained communication between all production members
 		\item Organized rehearsals for thirty people
 	\end{itemize}}
-\tlcventry[gray]{2013}{2015}{Technical Director}{\textsc{Northwood High School}}{Irvine, CA}{}{\begin{itemize}
-		\item Decreased lumber costs by 30\% by decreasing waste
-		\item Coordinated eight technical departments in meeting checkpoints
-		\item Analyzed and determined cost-efficiency and quality of set pieces
-	\end{itemize}}
+%\tlcventry[gray]{2013}{2015}{Technical Director}{\textsc{Northwood High School}}{Irvine, CA}{}{\begin{itemize}
+%		\item Decreased lumber costs by 30\% by  decreasing waste
+%		\item Coordinated eight technical departments in meeting checkpoints
+%		\item Analyzed and determined cost-efficiency and quality of set pieces
+%	\end{itemize}}
 
 %\tlcventry[orange]{2014}{2015}{Set Designer}{\textsc{Northwood High School}}{Irvine, CA}{}{\begin{itemize}
 %		\item Designed the set for two productions on the Northwood High stage.
@@ -148,6 +141,23 @@
 %		\item Assisted realtors with services such as painting, electrical, appliance repair and installation, and home renovations.
 %	\end{itemize}}
 
+\section{Papers and Projects}
+
+\tlcventry[gray]{2016}{0}{Projects in Rollett Group}{\textsc{Carnegie Mellon University}}{Pittsburgh, PA}{}{
+\begin{itemize}
+  	\item Sudipto Mandal, Jacky Lao, Sean Donegan, Anthony D. Rollett,\\ "Generation of representative three-dimensional microstructure for two-phase titanium alloys." (In review)
+	\item Application of data mining and data science techniques to microstructural data
+	\item Image analysis and processing of micrographs of titaniun alloys
+\end{itemize}}
+
+\tlcventry[gray]{2017}{0}{Finalist - Tartan Data Science Cup}{\textsc{Carnegie Mellon University}}{Pittsburgh, PA}{}{
+  \begin{itemize}
+    \item Prototyped a gradient boosted decision tree model in R, in six hours
+    \item Made predictions of loan statuses from an imbalanced dataset presented by Capital One
+  \end{itemize}
+}
+
+
 
 %------------------------------------------------
 %\section{Extracurricular Activities}
@@ -166,13 +176,13 @@
 
 \section{Technical Skills}
 
-\cvitem{Proficient:}{MATLAB, Python, R, LaTeX}
+\cvitem{Proficient:}{Python, C, R, MATLAB, LaTeX}
 \cvitem{Familiar:}{Rust, SQL, Git, Linux, Mathematica, ParaView}
 \cvitem{Instrumental:}{Optical Microscopy, X-Ray Diffraction, Scanning Electron Microscopy}
 
-\section{Coursework}
-\cvitem{Current:}{Probability Theory, Functional Programming, Materials Characterization, Transport, Defects, Phase Relations}
-\cvitem{Completed:}{Imperative Programming, Differential Equations, Engineering Statistics, Machine Learning (Coursera)}
+\section{Relevant Coursework}
+\cvitem{}{Probability~Theory*, Functional~Programming*, Imperative~Programming, Introduction~to~Computer~Science, \linebreak Differential~Equations, Concepts~of~Mathematics, Engineering~Statistics, Machine~Learning~(Coursera),\linebreak Data~Manipulation~at~Scale (Coursera)*}
+\cvitem{}{\small*Currently Taking}
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
